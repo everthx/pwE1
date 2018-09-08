@@ -1,0 +1,33 @@
+Fernando Luna Fuentes
+16210975
+
+1- Examen/
+├── Examen
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── manage.py
+
+2- makemigration migrate runserver
+
+3- 
+Global: Las paginas estan siendo declaradas fuera del APP
+Local: Las paginas estan siendo servidas desde los archivos locales
+
+4- def home(request):
+    return render(request, 'home.html')
+
+5- class home_view (generic, "Home.html"):
+	template_name = ("tweet/home.html")
+	modem = tweet
+
+6- django-admin startproject Examen1
+
+7- django-admin startapp SubExamen1
+
+8- Contiene todas las configuraciones de la instalacion de Django. Este documento explica como funcionan todas las configuraciones y cuales estan disponibles.
+
+9- python manage.py migrate
+
+10- python manage.py makemigration
